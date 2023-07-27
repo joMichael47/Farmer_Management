@@ -5,3 +5,4 @@ This repo concerns a project I've developed with spring where I'm practicing a l
 #### - Springboot
 #### - Thymeleaf
 #### - Spring security
+#### - JPA
