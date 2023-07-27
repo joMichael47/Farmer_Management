@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Site d'Agriculteurs - Contact</title>
+    <meta name="description" content="Free Bootstrap Theme by uicookies.com">
+    <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
+
+    <th:block th:replace="fragments/css.html::css"></th:block>
+  </head>
+  <body>
+
+    <div class="probootstrap-search" id="probootstrap-search">
+      <a href="#" class="probootstrap-close js-probootstrap-close"><i class="icon-cross"></i></a>
+      <form action="#">
+        <input type="search" name="s" id="search" placeholder="Cherchez un mot-clé et validez">
+      </form>
+    </div>
+    
+    <div class="probootstrap-page-wrapper">
+      <!-- Fixed navbar -->
+      
+      <div class="probootstrap-header-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-9 col-md-9 col-sm-9 probootstrap-top-quick-contact-info">
+              <span><i class="icon-location2"></i>Eyang , Cameroun</span>
+              <span><i class="icon-phone2"></i>+237 690453128</span>
+              <span><i class="icon-mail"></i>www.siteagricol.com</span>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 probootstrap-top-social">
+              <ul>
+                <li><a href="#"><i class="icon-twitter"></i></a></li>
+                <li><a href="#"><i class="icon-facebook2"></i></a></li>
+                <li><a href="#"><i class="icon-instagram2"></i></a></li>
+                <li><a href="#"><i class="icon-youtube"></i></a></li>
+                <li><a href="#" class="probootstrap-search-icon js-probootstrap-search"><i class="icon-search"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <th:block th:replace="fragments/menu.html::menu"></th:block>
+      
+      <section class="probootstrap-section probootstrap-section-colored">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-left section-heading probootstrap-animate">
+              <h1 class="mb0">Contactez Nous</h1>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+
+      <section class="probootstrap-section probootstrap-section-sm">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="row probootstrap-gutter0">
+                <div class="col-md-4" id="probootstrap-sidebar">
+                  <div class="probootstrap-sidebar-inner probootstrap-overlap probootstrap-animate">
+                    <h3>Pages</h3>
+                    <ul class="probootstrap-side-menu">
+                      
+                      <li><a href="index.html">Accueil</a></li>
+                      <li><a href="enregistrement.html">Enregistrement</a></li>
+                      <li><a href="liste.html">Liste des agriculteurs</a></li>
+                      <li class="active"><a>Contactez nous</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-7 col-md-push-1  probootstrap-animate" id="probootstrap-content">
+                  <h2>Entrez en contact</h2>
+                  <p>Contactez nous en  utilisant le formulaire ci dessous</p>
+                  <form action="#" method="post" class="probootstrap-form">
+                    <div class="form-group">
+                      <label for="name">Nom</label>
+                      <input type="text" class="form-control" id="name" name="name">
+                    </div>
+                    <div class="form-group">
+                      <label for="email">Email</label>
+                      <input type="email" class="form-control" id="email" name="email">
+                    </div>
+                    <div class="form-group">
+                      <label for="subject">Objet</label>
+                      <input type="text" class="form-control" id="subject" name="subject">
+                    </div>
+                    <div class="form-group">
+                      <label for="message">Message</label>
+                      <textarea cols="30" rows="10" class="form-control" id="message" name="message"></textarea>
+                    </div>
+                    <div class="form-group">
+                      <input type="submit" class="btn btn-primary btn-lg" id="submit" name="submit" value="Envoyer">
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- <section class="probootstrap-cta">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h2 class="probootstrap-animate" data-animate-effect="fadeInRight">Get your admission now!</h2>
+              <a href="#" role="button" class="btn btn-primary btn-lg btn-ghost probootstrap-animate" data-animate-effect="fadeInLeft">Enroll</a>
+            </div>
+          </div>
+        </div>
+      </section> -->
+      <th:block th:replace="fragments/footer.html::footer"></th:block>
+
+    </div>
+    <!-- END wrapper -->
+
+
+    <th:block th:replace="fragments/js.html::js"></th:block>
+
+    
+  </body>
+</html>

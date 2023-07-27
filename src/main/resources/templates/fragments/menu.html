@@ -1,0 +1,38 @@
+<html xmlns:th="http://www.thymeleaf.org" lang="fr">
+<body>
+<nav th:fragment="menu" class="navbar navbar-default probootstrap-navbar">
+
+    <div class="container">
+        <div class="navbar-header">
+            <div class="btn-more js-btn-more visible-xs">
+                <a href="#"><i class="icon-dots-three-vertical "></i></a>
+            </div>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+
+        <div id="navbar-collapse" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a th:href="@{/}">Accueil</a></li>
+                <li class="dropdown">
+                    <a href="#" data-toggle="dropdown"  class="dropdown-toggle" >Annuaire</a>
+                    <ul class="dropdown-menu">
+                        <li><a th:href="@{/enregistre}" sec:authorize="isAuthenticated()">Enregistrement d'un agriculteur</a></li>
+                        <li><a th:href="@{/liste}">Liste des agriculteurs</a></li>
+                    </ul>
+                </li>
+
+                <li><a th:href="@{/contact}">Contact</a></li>
+
+                <li sec:authorize="isAuthenticated()" ><span class="text-success" th:utext="${infoUser}"></span></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+</body>
+</html>
+
