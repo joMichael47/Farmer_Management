@@ -7,4 +7,4 @@ This repo concerns a project I've developed with spring where I'm practicing a l
 #### - Spring security
 #### - JPA
 
-To run you need to check the config in the [application.properties](src/main/resources/application.properties )
+To run you need to check the config in the [application.properties](src/main/resources/application.properties) file
